@@ -1,6 +1,7 @@
 import numpy as np
 from .Lasso import MyLasso
-from .utils import mse 
+from .utils import mse
+from .utils import find_max_l1_penalty
 
 def l1_penalty_tunning(X_tr, y_tr, X_te, y_te, l1_penalties, lasso_regr= None):
     
