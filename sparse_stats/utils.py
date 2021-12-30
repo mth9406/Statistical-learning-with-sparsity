@@ -1,4 +1,5 @@
 import numpy as np
+from .Lasso import MyLasso
 
 def soft_thresholding_fn(x, l1_penalty):
     return np.sign(x)*np.maximum(np.abs(x)-l1_penalty,0)
